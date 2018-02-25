@@ -131,4 +131,4 @@ STATICFILES_DIRS = (
     STATIC_DIR,
 )
 
-CODEMIRROR_PATH = os.path.join(STATIC_URL, 'example_project', 'codemirror-5.35.0')
+CODEMIRROR_PATH = os.path.join(STATIC_URL, 'example_project', 'codemirror')
