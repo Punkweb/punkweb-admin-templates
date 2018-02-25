@@ -1,0 +1,51 @@
+{% extends "admin/base_site.html" %}
+
+{% load i18n admin_urls static admin_list %}
+
+{% block title %}Select template to change{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/dashboard.css" %}">
+{% endblock %}
+
+{% if not is_popup %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">Home</a>
+&rsaquo; Templates
+</div>
+{% endblock %}
+{% endif %}
+
+{% block content %}
+<div id="content-main">
+  {% for group in grouped_templates %}
+  <div class="app-templates module">
+    <table class="model-group">
+      <caption>
+        <a href="{% url 'admin-template-list' %}" class="section" title="Edit templates from within the admin interface">{{group.0.relative_directory}}</a>
+      </caption>
+      {% for template in group %}
+      <tr class="model-group">
+        <th scope="row"><a href="{% url 'admin-template-detail' template.key %}">{{template.filename}}</a></th>
+        <td><a href="{% url 'admin-template-detail' template.key %}" class="changelink">Change</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  {% endfor %}
+</div>
+<div id="content-related">
+  <div class="module">
+    <h2>Note</h2>
+    <ul>
+      <li>Changes made in this interface are reflected immediately on the site.</li>
+      <li>There is no way to revert the changes you make to templates from within this interface.</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,170 @@
+html, body, head, p, h1, h2, h3, h4, h5, h6, q, ul, ol, li, a, nav, main, aside, img, blockquote, cite, code, strong, em {
+  text-decoration: inherit;
+  line-height: inherit;
+  white-space: inherit;
+  background: inherit;
+  text-align: inherit;
+  display: table;
+  list-style: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  outline: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font: normal normal 16px sans-serif;
+  background-color: #282828;
+  line-height: 1.4;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: normal;
+  text-align: left;
+  display: block;
+  text-shadow: 1px 1px 10px #000000;
+}
+
+head {
+  display: none;
+}
+
+body {
+  width: 960px;
+  margin: 1rem auto;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 1.3rem 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin: 1.1rem 0;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-indent: 1em;
+  color: #FFFFFF;
+}
+
+#navh {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+nav {
+  font-family: sans-serif;
+  display: inline-block;
+  float: left;
+  width: 300px;
+  color: #FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  position: relative;
+  left: 90px;
+}
+
+nav ul li {
+  font-size: 16px;
+}
+
+main {
+  display: inline-block;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  outline: none;
+  color: #FF2F00;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #B32100;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 1rem;
+  list-style-position: inside;
+}
+
+ul li {
+  display: list-item;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1rem;
+  list-style-position: inside;
+}
+
+ol li {
+  display: list-item;
+}
+
+strong, em {
+  display: inline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+footer {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  position: relative;
+  left: 110px;
+  top: 110px;
+}
+
+.foot li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  color: #FF2F00;
+}
+
+.foot li a {
+  display: inline-block;
+  color: #FF2F00;
+}
+
+.pgp {
+  font-size: 13px;
+  font-family: monospace;
+}
