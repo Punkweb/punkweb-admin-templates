@@ -7,10 +7,10 @@ This package doesn't add any models, it simply creates two routes in the admin, 
 I've seen other forum software have this feature.  Eventually I'd like to integrate this project with [punkweb-boards](https://github.com/Punkweb/punkweb-boards).
 
 
-# Media
+## Media
 
-Templates list view
+### Templates list view
 ![Sweet Shit](https://i.imgur.com/EgzVIFN.png)
 
-Me editing the page I'm currently viewing, from within the page I'm currently viewing.
+### Me editing the page I'm currently viewing, from within the page I'm currently viewing.
 ![Badassery](https://i.imgur.com/pQH0V1H.gif)
